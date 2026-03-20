@@ -281,5 +281,5 @@ input:focus, textarea:focus{border-color: rgba(82,166,255,.5)}
   display:block;
   width:100%;
   border:0;
-  min-height:650px;
+  min-height:450px;
 }

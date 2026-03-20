@@ -271,8 +271,8 @@ input:focus, textarea:focus{border-color: rgba(82,166,255,.5)}
   .grid{grid-template-columns: 1fr}
 }
 .form--embed{
-  background:#fff;
-  border-radius:24px;
+  background:#21252A;
+  border-radius:12px;
   overflow:hidden;
   padding:0;
 }

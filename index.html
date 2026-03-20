@@ -43,7 +43,7 @@
     <div class="container hero" id="top">
       <div class="hero__content">
         <h1>Проектирование и монтаж систем отопления и водоснабжения в Сыктывкаре</h1>
-        <p class="lead">
+        <p class="">
           Проектирование, расчёты, подбор оборудования, комплектация и монтаж. Честные характеристики, индивидуальный подход, гарантия.
         </p>
 
@@ -59,7 +59,7 @@
         <div class="card">
           <div class="card__title">Быстрый запрос</div>
           <div class="card__text">Оставьте контакты — уточним задачу и предложим решение.</div>
-          <a class="btn btn--full" href="#lead">Оставить заявку</a>
+          <a class="btn btn--full" href="#">Оставить заявку</a>
           <div class="card__hint">
             Или напишите: <a href="mailto:post@strkomi.ru">post@strkomi.ru</a>
           </div>
@@ -141,9 +141,9 @@
       </div>
     </section>
 
-    <section class="section section--alt" id="lead">
+    <section class="section section--alt" id="">
       <div class="container">
-        <div class="leadbox">
+        <div class="box">
           <div class="leadbox__text">
             <h2>Заявка на расчет</h2>
             <p>Опишите задачу — мы свяжемся и предложим решение. Заявка придет на <b>post@strkomi.ru</b>.</p>
@@ -153,35 +153,13 @@
               <li>Ответим в рабочее время</li>
             </ul>
           </div>
+          
+          <iframe src="https://forms.yandex.ru/cloud/69bd1d9be010db66c3cb6825?iframe=1" 
+            frameborder="0" 
+            name="ya-form-69bd1d9be010db66c3cb6825" 
+            width="650">
+          </iframe>
 
-          <form class="form" id="leadForm" method="POST">
-            <label>
-              Имя
-              <input name="name" autocomplete="name" required placeholder="Например, Андрей" />
-            </label>
-
-            <label>
-              Телефон
-              <input name="phone" autocomplete="tel" required placeholder="+7…" />
-            </label>
-
-            <label>
-              Что нужно сделать
-              <textarea name="message" rows="5" required placeholder="Дом/квартира, площадь, что хотите (отопление/вода/канализация), сроки…"></textarea>
-            </label>
-
-            <!-- антиспам поле (должно быть пустым) -->
-            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" />
-
-            <button class="btn btn--full" type="submit">Отправить заявку</button>
-
-            <p class="form__hint">
-              Если форма не отправляется, напишите на
-              <a href="mailto:post@strkomi.ru?subject=Заявка%20с%20сайта%20strkomi.ru">post@strkomi.ru</a>.
-            </p>
-
-            <div class="form__status" id="formStatus" role="status" aria-live="polite"></div>
-          </form>
         </div>
       </div>
     </section>

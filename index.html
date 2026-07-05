@@ -55,16 +55,18 @@
         </div>
       </div>
 
-      <div class="hero__card">
-        <div class="card">
-          <div class="card__title">Быстрый запрос</div>
-          <div class="card__text">Оставьте контакты — уточним задачу и предложим решение.</div>
-          <a class="btn btn--full" href="#">Оставить заявку</a>
-          <div class="card__hint">
-            Или напишите: <a href="mailto:post@strkomi.ru">post@strkomi.ru</a>
-          </div>
-        </div>
-      </div>
+     <div class="hero__card">
+      <model-viewer
+          src="images/3D kotelynaya.glb"
+          camera-controls
+          auto-rotate
+          auto-rotate-delay="0"
+          rotation-per-second="15deg"
+          shadow-intensity="1"
+          exposure="1.1"
+          interaction-prompt="none">
+      </model-viewer>
+    </div>
     </div>
   </header>
 
@@ -190,7 +192,8 @@
       <div class="muted">Проектирование • Комплектация • Монтаж</div>
     </div>
   </footer>
-
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+  </script>
   <script src="script.js"></script>
 </body>
 

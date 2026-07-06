@@ -1,13 +1,15 @@
-// Мелочи UI
+// Мелочи UI: Автоматический год в футере
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// Логика мобильного меню
 const burger = document.getElementById("burger");
-if (burger) {
+const nav = document.querySelector(".nav");
+
+if (burger && nav) {
   burger.addEventListener("click", () => {
-    const nav = document.querySelector(".nav");
     const expanded = burger.getAttribute("aria-expanded") === "true";
     burger.setAttribute("aria-expanded", String(!expanded));
-    if (nav) nav.style.display = expanded ? "none" : "flex";
+    nav.classList.toggle("is-active"); // Переключаем класс, который мы добавили в CSS
   });
 }
 

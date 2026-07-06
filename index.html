@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
       (function(m,e,t,r,i,k,a){
@@ -42,7 +43,7 @@
 
     <div class="container hero" id="top">
       <div class="hero__content">
-        <h1>Проектирование и монтаж систем отопления и водоснабжения в Сыктывкаре</h1>
+        <h1 class="leadbox__title">Проектирование и монтаж систем отопления и водоснабжения <span style="color: var(--accent);">в Сыктывкаре</span></h1>
         <p class="">
           Проектирование, расчёты, подбор оборудования, комплектация и монтаж. Честные характеристики, индивидуальный подход, гарантия.
         </p>
@@ -59,15 +60,96 @@
     <div class="card">
       <div class="card__title">Быстрый запрос</div>
         <div class="card__text">Оставьте контакты — уточним задачу и предложим решение.</div>
-        <a class="btn btn--full" href="#">Оставить заявку</a>
+        <a class="btn btn--full" href="#lead">Оставить заявку</a>
         <div class="card__hint">
           Или напишите: <a href="mailto:post@strkomi.ru">post@strkomi.ru</a>
         </div>
       </div>
     </div>
+  
     </div>
+    
   </header>
+<!-- СЕКЦИЯ С 3D-ПОДИУМОМ И ПРИМЕРАМИ ПРОЕКТА -->
+<section class="section--3d">
+  <div class="container">
+    
+    <div class="podium__header">
+      <h2>Наша визуализация обвязки котельной в 3D</h2>
+      <p class="muted">Каждый узел рассчитывается до миллиметра. Изучите интерактивную модель и примеры рабочей документации, которую вы получаете перед началом монтажа.</p>
+    </div>
 
+    <div class="podium__body">
+      
+      <!-- Левая колонка: Примеры страниц проекта со скроллом -->
+      <div class="podium__docs">
+        <h3>Примеры листов проекта</h3>
+        <div class="docs__scroll-container">
+          
+          <div class="doc-card">
+            <div class="doc-card__preview">
+              <img src="images/Primer proecta 1.jpg" alt="Сводная схема сетей помещения котельной">
+            </div>
+            <div class="doc-card__info">
+              <span class="doc-card__tag" style="width: max-content;">Лист 1</span>
+              <h4>Сводная схема сетей котельной</h4>
+              <p>Наглядное 3D-расположение оборудования и трассировка трубопроводов.</p>
+            </div>
+          </div>
+
+          <div class="doc-card">
+            <div class="doc-card__preview">
+              <img src="images/Primer proecta 2.jpg" alt="Сводная схема сетей 2 этаж">
+            </div>
+            <div class="doc-card__info">
+              <span class="doc-card__tag" style="width: max-content;">Лист 5</span>
+              <h4>Схема сетей (2 этаж)</h4>
+              <p>Точная раскладка магистралей отопления и точек подключения радиаторов.</p>
+            </div>
+          </div>
+
+          <div class="doc-card">
+            <div class="doc-card__preview">
+              <img src="images/Primer proecta 3.jpg" alt="Принципиальная тепловая схема">
+            </div>
+            <div class="doc-card__info">
+              <span class="doc-card__tag" style="width: max-content;">Лист 21</span>
+              <h4>Принципиальная схема</h4>
+              <p>Гидравлическая логика: увязка котлов, бойлера ГВС и коллекторов.</p>
+            </div>
+          </div>
+
+          <div class="doc-card">
+            <div class="doc-card__preview">
+              <img src="images/Primer proecta  4.jpg" alt="Обвязка вводного узла ХВС">
+            </div>
+            <div class="doc-card__info">
+              <span class="doc-card__tag" style="width: max-content;">Лист 30</span>
+              <h4>Обвязка узла ХВС</h4>
+              <p>Детализация ввода воды с фильтрами и редуктором давления.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Правая колонка: 3D Модель с включенным приближением (disable-zoom убран) -->
+      <div class="podium__viewer">
+        <model-viewer 
+          src="images/3D kotelynaya.glb" 
+          alt="3D модель обвязки котельной" 
+          camera-controls 
+          auto-rotate 
+          shadow-intensity="1"
+          touch-action="pan-y">
+        </model-viewer>
+        <div class="viewer__hint">👉 Покрутите мышкой или приблизьте колесиком</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
   <main>
     <section class="section" id="services">
       <div class="container">
@@ -141,7 +223,7 @@
       </div>
     </section>
 
-    <section class="section section--alt" id="">
+    <section class="section section--alt" id="lead">
       <div class="container">
         <div class="box">
           <div class="leadbox__text">

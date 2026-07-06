@@ -670,3 +670,23 @@ input:focus, textarea:focus{border-color: var(--accent)}
   padding-left: 15px !important; /* Отступ для точки */
   text-align: left !important;
 }
+/* ==========================================================================
+   АДАПТИВ ДЛЯ МОБИЛЬНЫХ: ФОРМА ПОД ТЕКСТОМ
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  #lead .box {
+    flex-direction: column !important; /* Ставим элементы друг под другом */
+    gap: 30px !important;              /* Расстояние между текстом и формой */
+  }
+
+  .form.form--embed {
+    width: 100% !important;            /* Форма занимает всю ширину */
+    max-width: 100% !important;        /* Убираем ограничение в 500px */
+  }
+
+  /* Исправляем ширину фрейма, чтобы он не обрезался */
+  .form.form--embed iframe {
+    width: 100% !important;
+  }
+}
